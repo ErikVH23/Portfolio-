@@ -1,12 +1,76 @@
 <!DOCTYPE html>
 
 <html>
-<head>
+    <head>
+        <title>Erik's Portfolio</title>
+    </head>
 
-</head>
+    <body>
+    <h1 id="top">Header 1</h1>
+    <figure>
+        <img src="./images/Michigan Tech - Job Fair 092519 154352 (2).jpg" alt="Self Portrait" width="100">
+        <br /> 
+        <figcaption>
+            Self Portrait
+        </figcaption>
+    </figure>
+    <h2>Header 2</h2>
+    <h3>Bold and Italic</h3>
+    <p>this is a paragraph. This is a <b>bold</b> word. This is a <i>italicized</i> word.</p>
+    <h3>Sub and Super Script</h3>
+        <p>e<sup>-jt</sup>  log<sub>10</sub>(20)</p>
+    <h3>Line Breaks and Horizontal Rules</h3>
+        <p>Line break -> <br /></p>
+        <p>This is a horizontal rule <hr /></p>
+        <p><abbr title="Commercial Off-the Shelf">COTS</abbr></p>
+    <h3>Ordered and Ordered Lists</h3>
+        <p><ol>
+            <li>First Item</li>
+            <li>Second Item</li>
+            <li>Third Item</li>
+        </ol></p>
 
-<body>
+        <p><ul>
+            <li>Item</li>
+                <ol>
+                    <li>nested item</li>
+                </ol>
+            <li>Item</li>
+            <li>Item</li>
+        </ul></p>
+    <h3>Links</h3>
+        <p>Here is a link to <a href="http://www.youtube.com" target="_blank">YouTube</a></p>
+        <p>Link to top of page: <a href="#top">Top</a></p>
+    <h3>Tables</h3>
+    <table>
+        <tr>
+            <th></th>
+            <th scope="col">Attribute</th>
+            <th scope="col">Measured Value</th>
+        </tr>
+        <tr>
+            <th scope="row">Case 1</th>
+            <td colspan="2">12</td>
+        </tr>
+        <tr>
+            <th scope="row">Case 2</th>
+            <td>34</td>
+            <td>35</td>
+        </tr>
+    </table>
+    <h3>Forms</h3>
+    <form>
+        Name: <input type="text" id="name"><b></b>
+        <input type="button" value="Submit" onclick="printName()"> 
 
-</body>
+        <script>
+            function printName(){
+                console.log(document.getElementById("name").value);
+            }
+        </script>
+    </form>
+
+
+    </body>
 
 </html>
